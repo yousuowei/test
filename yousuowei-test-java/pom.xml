@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>yousuowei-test</artifactId>
+		<groupId>org.yousuowei</groupId>
+		<version>1.0.0</version>
+	</parent>
+
+
+	<groupId>org.yousuowei</groupId>
+	<artifactId>yousuowei-test-java</artifactId>
+	<packaging>jar</packaging>
+
+	<name>yousuowei-test-java</name>
+	<build>
+		<finalName>yousuowei-test-java</finalName>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.0-rc1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.4.2</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.3.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache-core</artifactId>
+			<version>2.6.8</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<!--groboutils-core ：多线程测试需用包 -->
+		<dependency>
+			<groupId>net.sourceforge.groboutils</groupId>
+			<artifactId>groboutils-core</artifactId>
+			<version>5</version>
+		</dependency>
+		<!--groboutils-core 多线程测试需用包 -->
+	</dependencies>
+
+	<!--groboutils-core 第三方库地址 -->
+	<repositories>
+		<repository>
+			<id>net.sourceforge.groboutils</id>
+			<name>GroboUtils</name>
+			<url>https://oss.sonatype.org/content/repositories/opensymphony-releases</url>
+		</repository>
+	</repositories>
+	<!--groboutils-core 第三方库地址 -->
+</project>

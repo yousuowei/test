@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="test" namespace="/test">
+		<!-- 定义一个拦截器 <interceptors> <interceptor name="authority" class="com.mipt.ottdevmgr.admin.action.CustomerMfInterceptor"> 
+			</interceptor> -->
+		<!-- 拦截器栈 <interceptor-stack name="customerMfInterceptor"> <interceptor-ref 
+			name="defaultStack" /> <interceptor-ref name="authority" /> </interceptor-stack> 
+			</interceptors> -->
+
+
+		<!-- 设备信息管理 -->
+		<action name="testJms" class="com.cn.system.base.jms.action.JmsTestAction">
+			<!-- 添加拦截器<interceptor-ref name="paramsPrepareParamsStack" /> <interceptor-ref 
+				name="customerMfInterceptor" /> -->
+		</action>
+	</package>
+</struts>
